@@ -1,0 +1,130 @@
+/* Login.css */
+.main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: linear-gradient(135deg, #eff1f1, #B0BEC5); */
+    background: linear-gradient(135deg, #d8f0f5, #B0BEC5);
+
+    padding: 20px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fafafa;
+    border-radius: 20px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    text-align: center;
+}
+
+.login-left {
+    /* background: linear-gradient(135deg, #DCE6F1, #B0BEC5); */
+
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: inset 4px 4px 10px rgba(255,255,255,0.2), inset -4px -4px 10px rgba(0,0,0,0.1);
+}
+
+.login-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    width: 180px;
+    height: 110px;
+}
+
+h2 {
+    color: #1c5789;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 80%;
+    height: 25px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.toggle-password {
+    background: none;
+    border: none;
+    color: #3A78C9;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login-btn {
+    background: linear-gradient(45deg, #3A78C9, #2A5F9E);
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 60%;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background: linear-gradient(45deg, #29538A, #1E3A68);
+}
+
+.message {
+    color: red;
+    font-size: 14px;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: #3A78C9;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    .login-container {
+        flex-direction: column; /* Stack items vertically */
+        width: 90%;
+        /* height: 100vh; */
+        padding: 20px;
+    }
+
+    .login-left {
+        order: 1; /* Move login-left to the top */
+        border-radius: 15px 15px 0 0;
+        height: 250px;
+    }
+
+    .login-right {
+        order: 2; /* Move login-right below */
+        border-radius: 0 0 15px 15px;
+        height: 250px;
+    }
+
+    input,
+    .login-btn {
+        width: 60%;
+    }
+}
