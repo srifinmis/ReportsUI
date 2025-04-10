@@ -22,10 +22,10 @@ const Navbar = () => {
       <Drawer
         variant="permanent"
         sx={{
-          width: 280, // Slightly increased width for better spacing
+          width: 250, // Slightly increased width for better spacing
           flexShrink: 0,
           "& .MuiDrawer-paper": {
-            width: 280,
+            width: 250,
             boxSizing: "border-box",
             backgroundColor: "#000957",
             color: theme.palette.common.white,
