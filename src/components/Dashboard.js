@@ -6,14 +6,14 @@ const Dashboard = ({ isDropped }) => {
   const navigate = useNavigate();
 
   const reports = [
-    { title: "Loan Details Report", route: "/components/LoanDetailsReport", color: "#2980B9" },
-    { title: "Death Report", route: "/components/DeathReport", color: "#E74C3C" },
-    { title: "Employee Master", route: "/components/EmployeeMasterReport", color: "#2ECC71" },
-    { title: "Foreclosure Report", route: "/components/ForeClouserReport", color: "#9B59B6" },
+    { title: "Loan Details Report", route: "/components/LoanDetailsReport", color: "#34495E" },
+    { title: "Death Report", route: "/components/DeathReport", color: "#34495E" },
+    { title: "Employee Master", route: "/components/EmployeeMasterReport", color: "#34495E" },
+    { title: "Foreclosure Report", route: "/components/ForeClouserReport", color: "#34495E" },
     { title: "CreditReport", route: "/components/CreditReport", color: "#34495E" },
-    { title: "BorrowerMaster Report", route: "/components/BorrowMasterReport", color: "#1ABC9C" },
-    { title: "LUC Report", route: "/components/LUCReport", color: "#D35400" },
-    { title: "Loan Application Report", route: "/components/LoanApplicationReport", color: "#7F8C8D" },
+    { title: "BorrowerMaster Report", route: "/components/BorrowMasterReport", color: "#34495E" },
+    { title: "LUC Report", route: "/components/LUCReport", color: "#34495E" },
+    { title: "Loan Application Report", route: "/components/LoanApplicationReport", color: "#34495E" },
     { title: "CIC Report", route: "/components/Reports", color: "#34495E" },
     { title: "CIC Reupload", route: "/components/Reupload", color: "#34495E" },
   ];
