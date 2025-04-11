@@ -20,7 +20,7 @@ import Dashboard from "./components/Dashboard";
 
 const ProtectedRoute = ({ children }) => {
   const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
-  return isLoggedIn ? children : <Navigate to="/dashborad" />;
+  return isLoggedIn ? children : <Navigate to="/" />;
 };
 
 const Layout = ({ children }) => {
